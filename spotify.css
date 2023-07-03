@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* main parts starts */
+head{
+    width: 100%;
+}
+
+.main{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1.1fr 3fr;
+}
+.right{
+    grid-area: 1 / 1 / 2 / 2;
+    background: #000000;
+    font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro", "MS Gothic", sans-serif;
+}
+.left{
+    grid-area: 1 / 2 / 2 / 3;
+    background: #000;
+}
+/* main parts ends */
+/* side part starts  */
+.rightContent{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+}
+.nav{
+    border: 2px solid #121212;
+    border-radius: 20px;
+    margin: 5px;
+    padding-top: 10px;
+    background: #121212;
+    grid-area: 1 / 1 / 2 / 2 ;
+}
+.library{
+    border: 2px solid #121212;
+    border-radius: 20px;
+    margin: 5px;
+    padding-top: 10px;
+    grid-area: 2 / 1 / 3 / 2;
+    background: #121212;
+}
+.singers{
+    border: 2px solid #121212;
+    border-radius: 20px;
+    margin: 5px;
+    background: #121212;
+    grid-area: 3 / 1 / 4 / 2;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.leftContent{
+    height: 90vh;
+    width: 100%;
+}
+.songs{
+    overflow: auto;
+    height: 90vh;
+    border: 2px solid #121212;
+    border-radius: 20px;
+    background: #121212;
+}
+.navText{
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+    word-spacing: 15px;
+}
+.navText1{
+    color: #ffffff;
+    padding: 50px;
+}
+.navText2{
+    color: #afaaaa;
+    padding: 50px;
+}
+#plus{
+    color: #afaaaa;
+    padding-left: 40px;
+
+}
+#arrow{
+    color: #afaaaa;
+    padding-left: 20px;
+}
+.artist{
+    font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro", "MS Gothic", sans-serif;;
+    border: 1px solid #242424;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 60px;
+    text-align: center;
+    background: #242424;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}
+#singersHead1{
+    float: left;
+    padding-left: 15px;
+    color:#afaaaa;
+}
+#singersHead2{
+    padding-right: 15px;
+    float: right;
+    color:#afaaaa;
+    font-size:small;
+}
+.singerList{
+    display: flex;
+    width: 100%;
+    margin: 2px;
+    border-radius: 10px;
+}
+.singerImage{
+    flex: 1;
+}
+.singerDetails{
+    flex: 4;
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 8px;
+    color: #afaaaa;
+    line-height: 1.5;
+    font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro", "MS Gothic", sans-serif;;
+}
+.singerPerson{
+    padding: 8px;
+    border-radius: 50px;
+}
+.singerList:hover{
+    cursor: pointer;
+    background-color: #242424;
+}
+/* side parts ends */
+/* right parts starts */
+.navbar{
+    height: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    background-color:#121212 ;
+    
+    
+}
+.navLeft{
+    grid-area: 1 / 1 / 2 / 2;
+    color: white;
+    float: left;
+    padding-top: 13px;
+    padding-left: 20px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color:#121212 ;
+    height: 50px;
+}
+.navRight{
+    grid-area: 1 / 2 / 2 / 3;
+    position: fixed;
+    width: 100%;
+    margin-left: 500px;
+    background-color:#121212 ;
+}
+.angleIcon{
+    width: 30px;
+    background: #000;
+    border-radius: 20px;
+    padding: 5px 15px 0px 10px;
+}
+.navButton1{
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left:130px;
+
+}
+
+.navButton2{
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 30px;border-radius: 20px;
+    margin: 10px;
+    transition: width 0.1s, height 0.1s;
+    
+}
+.navButton3{
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;border-radius: 20px;
+    margin: 10px;
+    
+}
+.songHead{
+    color: white;
+    padding: 15px;
+    font-family:"Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS Gothic", sans-serif;
+}
+.playMusic{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.music1{
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+.music1:hover{
+    background-color: #252525;
+}
+.music2{
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+.music2:hover{
+    background-color: #252525;
+}
+.music3{
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+.music3:hover{
+    background-color: #252525;
+}
+.music4{
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+.music4:hover{
+    background-color: #252525;
+}
+.musicImage{
+    padding: 20px 20px 10px 20px; 
+}
+#musicImageSrc{
+    border-radius: 5px;
+}
+.musicDetail{
+    padding: 0 20px 20px 20px;
+}
+.detailHead{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bolder;
+    font-family:"Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS Gothic", sans-serif; 
+}
+.detailDes{
+    color: #afaaaa;
+    padding-top: 5px;
+    font-size: small;
+    font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS Gothic", sans-serif; 
+}
+
+/* footer starts */
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.04px;
+}
+.footer1{
+    color: #ffffff;
+    text-align: start;
+    padding: 30px;
+}
+.footer1 a{
+    text-decoration: none;
+    color: #c9bfbf;
+}
+.footer1 a:hover{
+    color: white;
+}
+.footer4{
+    display: flex;
+}
+.footerIcon{
+    margin: 15px 35px 305px;
+    padding: 12px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #242424;
+    width: 50px;
+    border-radius: 28px;
+}
+.footerIcon:hover{
+    background-color: #383838;
+}
+.finish{
+    color: #888383;
+}
+.footer5{
+    display: flex;
+    color: #c9bfbf;
+    justify-content:space-around;
+    padding: 10px 290px 20px 20px;
+    flex: 4;
+}
+.last{
+    display: flex;
+}
+.copy{
+    flex: 1;
+    color: #ffffff;
+    font-size: small;
+    margin-top: 10px;
+}
+.bottom{
+    background: #000;
+    width: 100%;
+    height: 10vh;
+    overflow-y: hidden;
+}
+.bottomContent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 6fr 2fr 3fr;
+}
+
+.item1Image{
+    padding: 10px;
+
+}
+.item1ImageSrc{
+    border-radius: 8px;
+}
+.item2Text{
+    padding: 20px;
+    color: #ffffff;
+}
+.item3Icon{
+    padding: 20px;
+    color: blanchedalmond;
+    letter-spacing: 1px;
+}
+.bottomItem4{
+    padding: 5px 0px 7px 90px;
+}                                                                                                   
+.bottomItem6{
+    padding: 20px 0px 10px 0px;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+/* footer ends */

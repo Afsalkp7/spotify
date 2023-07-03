@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    
+    <link rel="stylesheet" href="spotify.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <!-- side bar starting -->
+        <div class="right">
+          <div class="rightContent">
+            <div class="nav">
+              <a class="navText" href="#"
+                ><b class="navText1"
+                  ><i class="fa-sharp fa-solid fa-house"></i> Home</b
+                ></a
+              ><br />
+              <a class="navText" href="#"
+                ><b class="navText2"
+                  ><i class="fa-solid fa-magnifying-glass"></i> Search</b
+                ></a
+              >
+            </div>
+            <div class="library">
+              <a class="navText" href="#"
+                ><b class="navText2"
+                  ><i class="fa-solid fa-layer-group"></i> Your Library</b
+                ></a
+              ><i id="plus" class="fa-solid fa-plus"></i
+              ><i id="arrow" class="fa-solid fa-arrow-right"></i>
+              <br />
+              <div class="artist">Artists</div>
+            </div>
+
+            <div class="singers">
+              <i id="singersHead1" class="fa-solid fa-magnifying-glass"></i>
+              <span id="singersHead2"
+                >Recents <i class="fa-sharp fa-solid fa-caret-down"></i
+              ></span>
+              <br />
+              
+              <div class="singerList">
+                <div class="singerImage">
+                  <img
+                    class="singerPerson"
+                    src="./images/alan.webp"
+                    width="100%"
+                  />
+                </div>
+                <div class="singerDetails">
+                  <p>Alan Walkar</p>
+                  <small>Artist</small>
+                </div>
+              </div>
+              <div class="singerList">
+                <div class="singerImage">
+                  <img
+                    class="singerPerson"
+                    src="./images/shreya.webp"
+                    width="100%"
+                  />
+                </div>
+                <div class="singerDetails">
+                  <p>Shreya Ghoshal</p>
+                  <small>Artist</small>
+                </div>
+              </div>
+              <div class="singerList">
+                <div class="singerImage">
+                  <img
+                    class="singerPerson"
+                    src="./images/aniruth.webp"
+                    width="100%"
+                  />
+                </div>
+                <div class="singerDetails">
+                  <p>Anirudh Ravichander</p>
+                  <small>Artist</small>
+                </div>
+              </div>
+              <div class="singerList">
+                <div class="singerImage">
+                  <img
+                    class="singerPerson"
+                    src="./images/imam.webp"
+                    width="100%"
+                  />
+                </div>
+                <div class="singerDetails">
+                  <p>D. Imman</p>
+                  <small>Artist</small>
+                </div>
+              </div>
+              <div class="singerList">
+                <div class="singerImage">
+                  <img
+                    class="singerPerson"
+                    src="./images/arjith.webp"
+                    width="100%"
+                  />
+                </div>
+                <div class="singerDetails">
+                  <p>Arjith Singh</p>
+                  <small>Artist</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- side bar ends -->
+
+        <div class="left">
+          <div class="leftContent">
+            <div class="songs">
+              <!-- main nav bar starts -->
+              <div class="navbar">
+                <div class="navLeft">
+                  <div class="angleIcon">
+                    <i class="fa-solid fa-angle-left"></i>
+                  </div>
+                  <div class="angleIcon">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="navRight">
+                  <button class="navButton1">Explore Premium</button>
+                  <button class="navButton2">
+                    <i class="fa-regular fa-circle-down"></i> Install App
+                  </button>
+                  <button class="navButton3">
+                    <i class="fa-solid fa-user"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- main nav bar ends -->
+              <br />
+              <br>
+              <!-- song section starts -->
+              <!-- 1st slide -->
+              <div class="songHead">
+                <h2>Recently played</h2>
+              </div>
+              <br>
+              <div class="playMusic">
+                <div class="music1">
+                  <div class="musicImage">
+                    <img id="musicImageSrc" src="./images/rock.jpg" width="100%">
+                  </div>
+                  <div class="musicDetail">
+                        <span class="detailHead" >Rock Classics</span><br>
+                        
+                        <p class="detailDes">Rock legend & epic songs that inspire...</p>
+                  </div>
+                </div>
+            </div>
+            <!-- 2nd slide  -->
+            <br>
+            <div class="songHead">
+              <h2>Charts</h2>
+            </div>
+            <br>
+            <div class="playMusic">
+              <div class="music1">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/hot.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Hot hit panjabi</span><br>
+                      
+                      <p class="detailDes">Trach the hottest panjabi music with moosi...</p>
+                </div>
+              </div>
+              <div class="music2">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/latest.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Latest Tamil</span><br>
+                      
+                      <p class="detailDes">New Lateset music from Kollywood cover:LEO</p>
+                </div>
+              </div>
+              <div class="music3">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/hindi.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Hot Hits Hindi</span><br>
+                      
+                      <p class="detailDes">Hottest hindi music served here . cover - pathaan</p>
+                </div>
+              </div>
+              <div class="music4">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/tamil.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Hot Hits Tamil</span><br>
+                      
+                      <p class="detailDes">Tune into the Hottest tracks of Kollywood! cover : LEO</p>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd slide  -->
+          <br>
+          <div class="songHead">
+            <h2>Popular Albums</h2>
+          </div>
+          <br>
+            <div class="playMusic">
+              <div class="music1">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/kabir.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Kabir Singh </span><br>
+                      
+                      <p class="detailDes">Various artit</p>
+                </div>
+              </div>
+              <div class="music2">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/phir.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Phir Aur Kya</span><br>
+                      
+                      <p class="detailDes">Sachin-jigar,Arjith Singh,</p>
+                </div>
+              </div>
+              <div class="music3">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/champagne.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Champagne Talk</span><br>
+                      
+                      <p class="detailDes">King</p>
+                </div>
+              </div>
+              <div class="music4">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/yeh.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Yeh Jawaani Hai</span><br>
+                      
+                      <p class="detailDes">Pritam</p>
+              </div>
+            </div>
+          </div>
+          <!-- 4th slide  -->
+          <div class="songHead">
+            <h2>Trending Now</h2>
+          </div>
+          
+          <br>
+            <div class="playMusic">
+              <div class="music1">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/thare.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Tere Vaasthe</span><br>
+                      
+                      <p class="detailDes">Varun Jain, Sachin Jigar</p>
+                </div>
+              </div>
+              <div class="music2">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/samandar.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Samandar Saraab</span><br>
+                      
+                      <p class="detailDes">Madhur Sharma</p>
+                </div>
+              </div>
+              <div class="music3">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/chaand.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Chaand Baaliyan</span><br>
+                      
+                      <p class="detailDes">Adithya A</p>
+                </div>
+              </div>
+              <div class="music4">
+                <div class="musicImage">
+                  <img id="musicImageSrc" src="./images/galtiyan.jpg" width="100%">
+                </div>
+                <div class="musicDetail">
+                      <span class="detailHead" >Galtiyan</span><br>
+                      
+                      <p class="detailDes">Arjith Singh</p>
+              </div>
+            </div>
+          </div>
+                    <!-- 5th slide  -->
+                    <div class="songHead">
+                      <h2>Sound of India</h2>
+                    </div>
+                    
+                    <br>
+                      <div class="playMusic">
+                        <div class="music1">
+                          <div class="musicImage">
+                            <img id="musicImageSrc" src="./images/mumbai.jpg" width="100%">
+                          </div>
+                          <div class="musicDetail">
+                                <span class="detailHead" >The Sound Of Mumbai</span><br>
+                                
+                                <p class="detailDes">The songs thst define, unite and distinguish...</p>
+                          </div>
+                        </div>
+                        <div class="music2">
+                          <div class="musicImage">
+                            <img id="musicImageSrc" src="./images/banglore.jpg" width="100%">
+                          </div>
+                          <div class="musicDetail">
+                                <span class="detailHead" >The Sound Of Banglore</span><br>
+                                
+                                <p class="detailDes">The songs thst define, unite and distinguish...</p>
+                          </div>
+                        </div>
+                        <div class="music3">
+                          <div class="musicImage">
+                            <img id="musicImageSrc" src="./images/kolkata.jpg" width="100%">
+                          </div>
+                          <div class="musicDetail">
+                                <span class="detailHead" >The Sound Of kolkata</span><br>
+                                
+                                <p class="detailDes">The songs thst define, unite and distinguish...</p>
+                          </div>
+                        </div>
+                        <div class="music4">
+                          <div class="musicImage">
+                            <img id="musicImageSrc" src="./images/delhi.jpg" width="100%">
+                          </div>
+                          <div class="musicDetail">
+                                <span class="detailHead" >The Sound Delhi</span><br>
+                                
+                                <p class="detailDes">The songs thst define, unite and distinguish...</p>
+                        </div>
+                      </div>
+                    </div>
+        <br>
+        <br>
+        <footer>
+          <div class="footer">
+            <div class="footer1">
+              <h4>Company</h4>
+              
+              <a class="footerLink" href="#">About</a>
+              <br>
+              <a class="footerLink" href="#">Jobs</a>
+              <br>
+              <a class="footerLink" href="#">For the Record</a>
+              <br>
+            </div>
+            <div class="footer1">
+              <h4>Communities</h4>
+              
+              <a class="footerLink" href="#">For Artists</a>
+              <br>
+              <a class="footerLink" href="#">Developers</a>
+              <br>
+              <a class="footerLink" href="#">Advertising</a>
+              <br>
+              <a class="footerLink" href="#">Invester</a>
+              <br>
+              <a class="footerLink" href="#">Vendors</a>
+              <br>
+              <a class="footerLink" href="#">Spotify for Work</a>
+              <br>
+            </div>
+            <div class="footer1"><h4>Useful links</h4>
+              <a class="footerLink" href="#">Support</a>
+              <br>
+              <a class="footerLink" href="#">Free Mobile App</a>
+              <br>
+            </div>
+            <div class="footer4">
+              <div class="footerIcon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="footerIcon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="footerIcon"><i class="fa-brands fa-facebook"></i></div>
+            </div>
+          </div>
+          <hr class="finish">
+          <div class="last">
+          <div class="footer5">
+            <div class="footer5Content">Legal</div>
+            <div class="footer5Content">Privacy center</div>
+            <div class="footer5Content">Privacy policy</div>
+            <div class="footer5Content">Cookies</div>
+            <div class="footer5Content">About Ads</div>
+            <div class="footer5Content">Accessibility</div>
+          </div>
+          <div class="copy">© 2023 Spotify AB</div>
+        </div>
+        </footer>
+      </div>
+        </div>
+      </div>
+    </header>
+    <div class="bottom">
+      <div class="bottomContent">
+        <div class="bottomItem1">
+          <div class="item1Image">
+            <img class="item1ImageSrc" src="./images/bach.jpg" alt="item1" width="100%">
+          </div>
+        </div>
+        <div class="bottomItem2">
+          <div class="item2Text">
+            <h4>Bach,JS:English Suite No.1 in A Major,</h4>
+            <small>Johann Sebastian Bach,Piotr Anderszewski</small>
+          </div>
+        </div>
+        <div class="bottomItem3">
+          <div class="item3Icon">
+            <i class="fa-regular fa-heart"></i> 
+            <i class="fa-solid fa-print"></i>
+          </div>
+          
+        </div>
+        <div class="bottomItem4">
+          <audio controls>
+            <source src="/audio/music.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="bottomItem5">
+        </div>
+        <div class="bottomItem6">
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-brands fa-connectdevelop"></i>
+          <i class="fa-solid fa-volume-high"></i>
+          <input type="range" min="1" max="100" value="50">
+        </div>
+      </div>
+    </div>
+<!-- footer ends  -->
+  </body>
+</html>
